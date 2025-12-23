@@ -29,7 +29,7 @@ int main(void) {
             data.mx, data.my, data.mz);
 	}
         
-        usleep(10000); // 10ms delay
+        usleep(100000); // 10ms delay
     }
     
     icm20948_close(&imu);

@@ -42,12 +42,12 @@ if (BUILD_DEMO)
     )
 
     # create executable for the calibration
-    #add_executable(calibrate test/test_calibration.c)
-    #target_link_libraries(
-    #    calibrate
-    #    PRIVATE
-    #    ${PROJECT_NAME}
-    #    ${GSL_LIBRARIES}
-    #)
+    add_executable(calibrate test/test_calibration.c)
+    target_link_libraries(
+        calibrate
+        PRIVATE
+        ${PROJECT_NAME}
+        ${GSL_LIBRARIES}
+    )
 endif()
 
